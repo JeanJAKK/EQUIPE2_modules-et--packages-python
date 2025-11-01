@@ -1,9 +1,9 @@
 # importation du package
-from manita import *
+from manita import ocr,img_compressor,raccourcisseur_url
 
 # Fonction menu
 def menu() :
-    print("MENU – Modules & Packages")
+    print("\n\nMENU – Modules & Packages")
     print("=" * 40)
     print("1. Scanner WiFi (Windows)")
     print("2. OCR (image -> texte)")
@@ -22,12 +22,12 @@ while True:
     if choice == "1" :
         pass
     elif choice == "2" :
-        ocr()
+        ocr.ocr()
     elif choice == "3" :
         pass
     elif choice == "4" :
-        raccoucisseur_url()
+        raccourcisseur_url.raccourcisseur_url()
     elif choice == "5" :
-        img_compressor()
+        img_compressor.img_compressor()
     else :
         break
