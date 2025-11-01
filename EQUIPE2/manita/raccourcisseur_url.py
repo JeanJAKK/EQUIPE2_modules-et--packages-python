@@ -6,7 +6,8 @@ def message():
     print("=== RACCOURCISSEUR D'URL ===")
 
 # Fonction de vérification saisie et effectue le traitement
-def raccourcisseur_url():
+def run_raccourcisseur_url():
+    message()
     try:
         while True :
             get_url =  str(input("Entrer le lien (commençant par http:// ou https://) : "))
@@ -22,9 +23,5 @@ def raccourcisseur_url():
 
     except Exception as e:
         print(f"Une erreur s'est produite :{e}")
-# Appel des fonctions
-
-message()
-raccourcisseur_url()
 
 

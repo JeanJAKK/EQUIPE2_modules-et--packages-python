@@ -10,7 +10,7 @@ def menu() :
     print("3. Générateur de QR Code")
     print("4. Raccourcisseur de lien")
     print("5. Compresseur d’image")
-    print("0. Quitter")
+    print("0. Quitter\n\n")
 
     choix = input("Votre choix :")
     return choix
@@ -22,12 +22,12 @@ while True:
     if choice == "1" :
         pass
     elif choice == "2" :
-        ocr.ocr()
+        ocr.run_ocr()
     elif choice == "3" :
         pass
     elif choice == "4" :
-        raccourcisseur_url.raccourcisseur_url()
+         raccourcisseur_url.run_raccourcisseur_url()
     elif choice == "5" :
-        img_compressor.img_compressor()
+        img_compressor.run_img_compressor()
     else :
         break

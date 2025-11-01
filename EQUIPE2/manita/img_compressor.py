@@ -18,7 +18,8 @@ def quality():
 
 
 # Fonction de vérification saisie et effectue le traitement
-def img_compressor():
+def run_img_compressor():
+    message()
     try:
         image_path = str(input("Entrer le chemin de l'image : "))
 
@@ -33,9 +34,5 @@ def img_compressor():
 
     except Exception as e:
         print(f"Une erreur s'est produite :{e}")
-
-# Appel des fonctions
-message()
-img_compressor()
 
 
