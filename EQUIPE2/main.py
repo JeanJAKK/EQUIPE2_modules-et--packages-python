@@ -1,5 +1,5 @@
 # importation du package
-from manita import ocr,img_compressor,raccourcisseur_url
+from manita import ocr,img_compressor,raccourcisseur_url, scanner
 
 # Fonction menu
 def menu() :
@@ -20,7 +20,7 @@ while True:
     choice = menu()
 
     if choice == "1" :
-        pass
+        scanner.scanner_wifi()
     elif choice == "2" :
         ocr.run_ocr()
     elif choice == "3" :
