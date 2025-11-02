@@ -1,5 +1,5 @@
 # importation du package
-from manita import ocr,img_compressor,raccourcisseur_url, scanner
+from manita import ocr,img_compressor,raccourcisseur_url, scanner, qrc-maker
 
 # Fonction menu
 def menu() :
