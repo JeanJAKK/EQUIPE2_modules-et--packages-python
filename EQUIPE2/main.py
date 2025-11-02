@@ -1,5 +1,5 @@
 # importation du package
-from manita import ocr,img_compressor,raccourcisseur_url, scanner, qrc-maker
+from manita import ocr,img_compressor,raccourcisseur_url, scanner, qrcmaker
 
 # Fonction menu
 def menu() :
@@ -24,7 +24,7 @@ while True:
     elif choice == "2" :
         ocr.run_ocr()
     elif choice == "3" :
-        pass
+        qrcmaker.qr()
     elif choice == "4" :
          raccourcisseur_url.run_raccourcisseur_url()
     elif choice == "5" :
